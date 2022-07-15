@@ -12,7 +12,7 @@
  */
 const sentence1 = 'YOu lIVe ONlY ONcE'
 let s1L = sentence1.toLowerCase();
-let b = s1L.split(' ')
+let s1L_word = s1L.split(' ')
 let word = ''
 /** 
 for (let counter=0; counter <= sports.length-1; counter+=2) {
@@ -25,11 +25,11 @@ for (let counter=0; counter <= sports.length-1; counter+=2) {
  * 
 */
 
-for (a=0; a<= b.length-1; a++)  // at index 0; 0<=3; 0++
+for (a=0; a<= s1L_word.length-1; a++)  // at index 0; 0<=3; 0++
   {
-    word = word + b[a].charAt(0).toUpperCase()+ b[a].substring(1)+' '
+    word = word + s1L_word[a].charAt(0).toUpperCase()+ s1L_word[a].substring(1)+' '
 }           
-console.log(`${word}`);
+console.log(`${sentence1} -> ${word}`);
 
 
 //charAt(0).toUppercase()
@@ -51,13 +51,13 @@ console.log(`${word}`);
  */
 
 
-let c = b.reverse();
-let w1 = ''
-for (a=0; a <= c.length-1; a++)  {
-    w1 = w1 + c[a].substring(0)+' '
+let s1_reverse = s1L_word.reverse();
+let word1 = ''
+for (a=0; a <= s1_reverse.length-1; a++)  {
+    word1 = word1 + s1_reverse[a].substring(0)+' '
 }
 
-console.log(`${w1}`);
+console.log(`${sentence1} reversed -> ${word1}`);
 
 /**
  * Q3:
@@ -68,12 +68,12 @@ console.log(`${w1}`);
  * [1, -1] -> 0
  */
 
-var d = [1, 2, 3, 4, 5];     
+var arr1 = [1, 2, 3, 4, 5];     
 var total = 0;
-for (let a=0 ; a < d.length ; a++)   {    // starts a=0; 1<5; 0++
-    total += d[a]                           // 5<5  
+for (let a=0 ; a < arr1.length ; a++)   {    // starts a=0; 1<5; 0++
+    total += arr1[a]                           // 5<5  
 }
-console.log(total);
+console.log(`Sum of ${arr1} = ${total}`);
 
 
 /**
@@ -88,10 +88,11 @@ console.log(total);
  * [1, -1] -> 0/2 -> 0
  */
 
-var e = [1, -1]
+var arr2 = [1, -1]
 var total1 = 0
 
-for (let a=0; a < e.length; a++) {
-    total1 += e[a]
+for (let a=0; a < arr2.length; a++) {
+    total1 += arr2[a]
 }
-console.log((total1/(e.length)));
+let average = total1/arr2.length
+console.log(`Average of ${arr2} = ${average}`);
