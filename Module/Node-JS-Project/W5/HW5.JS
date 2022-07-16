@@ -18,7 +18,7 @@ let word = ''
 for (let counter=0; counter <= sports.length-1; counter+=2) {
     console.log(sports[counter]);
  }
- * a=index = 0,1,2,3        b=splits by word
+ * a=index = 0,1,2,3        s1L_word=splits by word
  * have, a , great, day
  * H A G D
  * substring must go to infinity # of alphabets = no end to the substring
@@ -47,7 +47,7 @@ console.log(`${sentence1} -> ${word}`);
  */
 
 /**
- * c = b(reverse) = day great a have
+ * s1_reverse = s1L_word(reverse) = day great a have
  */
 
 
@@ -68,8 +68,8 @@ console.log(`${sentence1} reversed -> ${word1}`);
  * [1, -1] -> 0
  */
 
-var arr1 = [1, 2, 3, 4, 5];     
-var total = 0;
+let arr1 = [1, 2, 3, 4, 5];     
+let total = 0;
 for (let a=0 ; a < arr1.length ; a++)   {    // starts a=0; 1<5; 0++
     total += arr1[a]                           // 5<5  
 }
@@ -88,8 +88,8 @@ console.log(`Sum of ${arr1} = ${total}`);
  * [1, -1] -> 0/2 -> 0
  */
 
-var arr2 = [1, -1]
-var total1 = 0
+let arr2 = [1, -1]
+let total1 = 0
 
 for (let a=0; a < arr2.length; a++) {
     total1 += arr2[a]
